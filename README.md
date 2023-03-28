@@ -4,11 +4,14 @@
 主要是作为<a href="https://doc.qt.io/qt-5/qfontdialog.html">QFontDialog</a>的平替/增强，毕竟Qt自带的字体选择器一言难尽(用过的都叹气)。
 
 
-
-
 # 【运行界面】
 
 <img src="https://github.com/Ls-Jan/Qt_CharFormatDialog/blob/main/%E3%80%90%E5%B1%95%E7%A4%BA%E3%80%91/%E7%95%8C%E9%9D%A2.png"/>
+
+# 【功能】
+
+一目了然，可以选择字体，设置字号，设置前景背景色，设置斜体粗体样式。<br>
+简单说明的是，数据核心是```QTextCharFormat```而不是```QFont```，毕竟```QFont```可没有“颜色”这个参数
 
 # 【动图】
 
