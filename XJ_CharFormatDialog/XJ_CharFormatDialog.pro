@@ -18,14 +18,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     XJ_CharFormatDialog.cpp \
     XJ_ColorChoose.cpp \
-    XJ_ListWidget.cpp \
     XJ_NumInput.cpp \
     main.cpp
 
 HEADERS += \
     XJ_CharFormatDialog.h \
     XJ_ColorChoose.h \
-    XJ_ListWidget.h \
     XJ_NumInput.h
 
 # Default rules for deployment.

@@ -14,6 +14,7 @@ XJ_CharFormatDialog::XJ_CharFormatDialog(QWidget *parent):QWidget(parent){
     this->update();
 
     this->setWindowModality(Qt::ApplicationModal);//阻挡其他窗口
+    this->setWindowFlags(Qt::Dialog|Qt::WindowCloseButtonHint);//对话框，并只保留关闭按钮
     this->setWindowTitle("选择字体样式");
 }
 
@@ -165,6 +166,7 @@ void XJ_CharFormatDialog::__Init_Other(){
     QObject::connect(this->__wids.backColor,&XJ_ColorChoose::valueChanged,this,&XJ_CharFormatDialog::__Set_BackColor);
     QObject::connect(this->__wids.ok,&QPushButton::clicked,this,&XJ_CharFormatDialog::__Opt_OK);
     QObject::connect(this->__wids.cancel,&QPushButton::clicked,this,&XJ_CharFormatDialog::__Opt_Cancel);
+
 }
 
 
@@ -239,8 +241,6 @@ void XJ_CharFormatDialog::__Set_BackColor(QColor color){
     this->update();
     this->signal_change();
 }
-
-
 
 
 

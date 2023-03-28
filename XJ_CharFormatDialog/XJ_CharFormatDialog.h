@@ -3,6 +3,8 @@
 
 
 
+#include"XJ_NumInput.h"
+#include"XJ_ColorChoose.h"
 
 #include<QMap>
 #include<QFont>
@@ -10,12 +12,8 @@
 #include<QLabel>
 #include<QPushButton>
 #include<QTextEdit>
+#include<QListWidget>
 #include<QGroupBox>
-
-#include"XJ_NumInput.h"
-#include"XJ_ColorChoose.h"
-#include"XJ_ListWidget.h"
-
 #include<QVBoxLayout>
 #include<QHBoxLayout>
 
