@@ -28,7 +28,7 @@ public:
     XJ_CharFormatDialog(QWidget*parent=nullptr);
     ~XJ_CharFormatDialog();
     void Set_DisplayText(QString displayText);//设置展示的文本内容
-    void Set_CharFormat(QTextCharFormat* format);//设置字体样式(formta指向堆变量，即new生成的对象)。当传入空指针时将使用其自带的字体样式
+    void Set_CharFormat(QTextCharFormat* format);//设置字体样式。当传入空指针时将使用其自带的字体样式
     QTextCharFormat*Get_CharFormat();//获取字体样式
 public:
     void hideEvent(QHideEvent *event) override;
